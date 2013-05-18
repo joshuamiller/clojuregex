@@ -16,5 +16,6 @@
   :cljsbuild {:builds
               [{:source-paths ["src/cljs"]
                 :compiler
-                {:output-to "resources/public/clojuregex.js"
-                 :optimizations :advanced}}]})
+                {:pretty-print true
+                 :output-to "resources/public/clojuregex.js"
+                 :optimizations :whitespace}}]})

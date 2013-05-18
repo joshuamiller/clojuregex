@@ -15,11 +15,12 @@
 
 (defn put-cljs-result
   [results]
-  (dommy/replace! (sel1 :#cljs) (results-template results)))
+  (dommy/replace-contents! (sel1 :#cljs) (results-template results)))
 
 (defn put-clj-result
   [results]
-  (dommy/replace! (sel1 :#clj) (results-template (reader/read-string (.getResponseText (.-target results))))))
+  (let [results (reader/read-string (.getResponseText (.-target results)))]
+    (dommy/replace-contents! (sel1 :#clj) (results-template (or results [])))))
 
 (defn get-clj-result
   [regex sample]
