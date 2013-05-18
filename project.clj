@@ -1,4 +1,5 @@
 (defproject clojuregex "0.1.0-SNAPSHOT"
+  :min-lein-version "2.0.0"
   :description "Online Clojure[Script] Regex Playground"
   :url "http://clojuregex.org/"
   :license {:name "The MIT License"
