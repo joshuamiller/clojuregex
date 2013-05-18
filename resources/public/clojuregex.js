@@ -28774,13 +28774,11 @@ goog.require("goog.net.XhrIo");
 goog.require("cljs.reader");
 goog.require("dommy.core");
 clojureregex.application.results_template = function results_template(results) {
-  var dom5057 = document.createElement("ul");
-  dom5057.appendChild(dommy.template.__GT_node_like.call(null, cljs.core.map.call(null, function(p1__4752_SHARP_) {
-    var dom5058 = document.createElement("li");
-    dom5058.appendChild(dommy.template.__GT_node_like.call(null, p1__4752_SHARP_));
-    return dom5058
-  }, results)));
-  return dom5057
+  return cljs.core.map.call(null, function(p1__6471_SHARP_) {
+    var dom6775 = document.createElement("li");
+    dom6775.appendChild(dommy.template.__GT_node_like.call(null, p1__6471_SHARP_));
+    return dom6775
+  }, results)
 };
 clojureregex.application.get_cljs_result = function get_cljs_result(regex, sample) {
   return cljs.core.re_seq.call(null, cljs.core.re_pattern.call(null, regex), sample)

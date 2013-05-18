@@ -3,11 +3,15 @@
   <title>Clojuregex: Test Regexes in Clojure[Script]</title>
 <body>
 
+  <h1>Clojuregex</h1>
+
   <p>
+    <label for="regex">Regular Expression</label>
     <input type="text" name="regex" placeholder="regex" id="regex"/>
   </p>
   
   <p>
+    <label for="sample">Test String</label>
     <input type="sample" name="sample" placeholder="sample"
     id="sample"/>
   </p>
@@ -15,8 +19,15 @@
   <p><input type="submit" id="submit"/></p>
 
   <div class="results">
-    <div id="cljs"></div>
-    <div id="clj"></div>
+    <h2>Matches</h2>
+    <div>
+      <h3>In ClojureScript</h3>
+      <ol id="cljs"></ol>
+    </div>
+    <div>
+      <h3>In Clojure</h3>
+      <ol id="clj"></ol>
+    </div>
   </div>
 
   <script type="text/javascript" src="clojuregex.js"></script>

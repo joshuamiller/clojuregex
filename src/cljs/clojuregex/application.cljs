@@ -6,8 +6,7 @@
    [dommy.macros :only [sel sel1 node]]))
 
 (defn results-template [results]
-  (node
-   [:ul (map #(node [:li %]) results)]))
+  (map #(node [:li %]) results))
 
 (defn get-cljs-result
   [regex sample]
