@@ -24,5 +24,6 @@
    [""] {:get root}
    ["results"] {:post regex}))
 
-(defn start []
-  (jetty/run-jetty routes {:port 3000}))
+(defn -main
+  [port]
+  (jetty/run-jetty routes {:port (Integer. port)}))

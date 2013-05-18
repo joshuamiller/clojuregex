@@ -1,1 +1,1 @@
-web: lein ring server $PORT
+web: lein with-profile production trampoline run -m clojuregex.core $PORT
