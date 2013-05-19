@@ -41,6 +41,8 @@ section {
             }
             .explanation {
                 @include span-columns(4);
+                font-family: $monospace;
+                font-size: golden-ratio($base-font-size, -1);
                 margin-top: 40px;
             }
         }
@@ -54,6 +56,8 @@ section {
         label {
             color: white;
             display: block;
+            font-size: golden-ratio($base-font-size, 1);
+            font-family: $lucida-grande;
         }
         textarea {
             font-family: $monospace;
@@ -61,6 +65,7 @@ section {
             border: 0px;
             color: white;
             width: 90%;
+            height: $base-font-size * 6;
             margin-top: golden-ratio($base-font-size, 1);
             padding: golden-ratio($base-font-size, -1);
         }
@@ -73,7 +78,8 @@ section {
         }
     }
     .submit {
-        input[type=submit] {
+        button#submit {
+            font-size: golden-ratio($base-font-size, 2);
             @include button(pill, $green);
         }
     }

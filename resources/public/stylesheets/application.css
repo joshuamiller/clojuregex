@@ -50,6 +50,8 @@ section {
         float: left;
         margin-right: 2.35765%;
         width: 31.76157%;
+        font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+        font-size: 9.88875px;
         margin-top: 40px; }
         section.header .title .explanation:last-child {
           margin-right: 0; }
@@ -60,13 +62,16 @@ section {
     height: 250px; }
     section .controls label {
       color: white;
-      display: block; }
+      display: block;
+      font-size: 25.888px;
+      font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif; }
     section .controls textarea {
       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
       background-color: #362600;
       border: 0px;
       color: white;
       width: 90%;
+      height: 96px;
       margin-top: 25.888px;
       padding: 9.88875px; }
     section .controls#for-regex {
@@ -83,7 +88,8 @@ section {
       width: 65.88078%; }
       section .controls#for-sample:last-child {
         margin-right: 0; }
-  section .submit input[type=submit] {
+  section .submit button#submit {
+    font-size: 41.88678px;
     border: 1px solid #464948;
     border-color: #464948 #323e3c #223432;
     border-radius: 16px;
@@ -102,7 +108,7 @@ section {
     text-decoration: none;
     text-shadow: 0 -1px 1px #3e514e;
     background-clip: padding-box; }
-    section .submit input[type=submit]:hover:not(:disabled) {
+    section .submit button#submit:hover:not(:disabled) {
       border: 1px solid #2f413c;
       border-color: #2f413c #1c3530 #0f2926;
       box-shadow: inset 0 1px 0 0 #509a87;
@@ -113,13 +119,13 @@ section {
       background-image: linear-gradient(#428272, #325a55);
       text-shadow: 0 -1px 1px #27443f;
       background-clip: padding-box; }
-    section .submit input[type=submit]:active:not(:disabled) {
+    section .submit button#submit:active:not(:disabled) {
       background: #43655f;
       border: 1px solid #172b28;
       border-bottom: 1px solid #132a29;
       box-shadow: inset 0 0 6px 3px #244946, 0 1px 0 0 white;
       text-shadow: 0 -1px 1px #2c423e; }
-    section .submit input[type=submit]:disabled {
+    section .submit button#submit:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
   section .matches {

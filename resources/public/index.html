@@ -28,7 +28,7 @@
                id="sample"></textarea>
 
         <div class="submit">
-          <p><input type="submit" id="submit" value="Test Regex"/></p>
+          <p><button id="submit">Test Regex</button></p>
         </div>
       </div>
 
@@ -37,14 +37,15 @@
     <section class="results">
 
       <div class="matches">
+        <h3>Matches In Clojure</h3>
+        <ol id="clj"></ol>
+      </div>
+
+      <div class="matches">
         <h3>Matches In ClojureScript</h3>
         <ol id="cljs"></ol>
       </div>
 
-      <div class="matches">
-        <h3>Matches In Clojure</h3>
-        <ol id="clj"></ol>
-      </div>
     </section>
 
     <script type="text/javascript" src="clojuregex.js"></script>
