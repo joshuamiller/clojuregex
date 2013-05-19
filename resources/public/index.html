@@ -1,35 +1,52 @@
 <html>
-<head>
-  <title>Clojuregex: Test Regexes in Clojure[Script]</title>
-<body>
+  <head>
+    <title>Clojuregex: Test Regexes in Clojure[Script]</title>
+    <link type="text/css" rel="stylesheet"
+          href="stylesheets/application.css" media="screen"/>
+  </head>
+  <body>
 
-  <h1>Clojuregex</h1>
+    <section class="header">
+      <div class="title">
+        <h1>Clojuregex</h1>
+        <div class="explanation">
+          Test Regexes in #"(Clojure)+(Script)?"
+        </div>
+      </div>
 
-  <p>
-    <label for="regex">Regular Expression</label>
-    <input type="text" name="regex" placeholder="regex" id="regex"/>
-  </p>
-  
-  <p>
-    <label for="sample">Test String</label>
-    <input type="sample" name="sample" placeholder="sample"
-    id="sample"/>
-  </p>
+    </section>
 
-  <p><input type="submit" id="submit"/></p>
+    <section class="input">
+      <div class="controls" id="for-regex">
+        <label for="regex">Regular Expression</label>
+        <textarea name="regex" placeholder="regex" id="regex"></textarea>
+      </div>
+      
+      <div class="controls" id="for-sample">
+        <label for="sample">Test String</label>
+        <textarea name="sample" placeholder="sample"
+               id="sample"></textarea>
 
-  <div class="results">
-    <h2>Matches</h2>
-    <div>
-      <h3>In ClojureScript</h3>
-      <ol id="cljs"></ol>
-    </div>
-    <div>
-      <h3>In Clojure</h3>
-      <ol id="clj"></ol>
-    </div>
-  </div>
+        <div class="submit">
+          <p><input type="submit" id="submit" value="Test Regex"/></p>
+        </div>
+      </div>
 
-  <script type="text/javascript" src="clojuregex.js"></script>
-</body>
+    </section>
+
+    <section class="results">
+
+      <div class="matches">
+        <h3>Matches In ClojureScript</h3>
+        <ol id="cljs"></ol>
+      </div>
+
+      <div class="matches">
+        <h3>Matches In Clojure</h3>
+        <ol id="clj"></ol>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="clojuregex.js"></script>
+  </body>
 </html>
