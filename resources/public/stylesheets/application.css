@@ -145,3 +145,5 @@ section {
         padding: 9.88875px;
         color: white;
         font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace; }
+  section.footer a, section.footer a:visited {
+    color: #b75d54; }

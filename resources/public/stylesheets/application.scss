@@ -99,5 +99,13 @@ section {
             }
         }
     }
+
+    &.footer {
+        
+        a, a:visited {
+            color: $red;
+        }
+        
+    }    
 }
 
